@@ -1,0 +1,18 @@
+﻿@model ProfileApplication.SanPhamViewModel
+
+@{
+    ViewData["Title"] = "BaiTap2";
+}
+<main>
+    <img src="@Model.Anh" />
+    <br /><br /><br />
+    <h4>@Model.TenSanPham</h4>
+
+    <h4>@Model.GiaBan VND</h4>
+
+    <br />
+</main>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
